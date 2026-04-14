@@ -29,3 +29,19 @@ WHERE City LIKE '
 
 -- when the alias have spaces then it should be placed inside the square brackets
 SELECT product as [Great Product] from orders;
+
+--A single number is a number that appeared only once in the MyNumbers table.
+--Find the largest single number. If there is no single number, report null.
+--To print the null when there is no element with freq 1 is there so we need to follow this syntax
+
+-- SELECT (subquery) AS column_name;  and this is final correct solution
+
+SELECT (
+           SELECT num
+           FROM MyNumbers
+           GROUP BY num
+           HAVING COUNT(num) = 1
+           ORDER BY num DESC
+           LIMIT 1
+    ) AS num;
+
