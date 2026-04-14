@@ -20,3 +20,9 @@ SELECT * FROM employees WHERE salary IS NOT NULL;
 -- now i am presenting a query in which if i am given a pattern of name that has second letter a
 
 select * from student where name like '_a%';
+
+--Select all records where the first letter of the City is an "a" or a "c" or an "s".
+SELECT * FROM Customers
+WHERE City LIKE '
+[acs]
+%';
