@@ -1,0 +1,8 @@
+1. in sql the single line comments starts with -- symbol
+
+2. valid multi line comments are denoted by /* fdhfndfjdfkdjfdkfjd */
+   for example
+   /*
+      This is a multiline comment
+      You can write multiple lines here
+   */
