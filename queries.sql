@@ -15,3 +15,5 @@ SELECT * FROM employees WHERE salary IS NULL;
 
 -- check the value is not null
 SELECT * FROM employees WHERE salary IS NOT NULL;
+
+-- in sql this sign represents a single pattern (_) when used with like operator
