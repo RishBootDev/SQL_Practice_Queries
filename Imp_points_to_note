@@ -6,3 +6,6 @@
       This is a multiline comment
       You can write multiple lines here
    */
+
+3. the format of date in sql is YYYY - MM - DD
+4. the datatype DATETIME is used to store both the date as well as time

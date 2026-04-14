@@ -6,7 +6,7 @@ FROM station;
 -- this sql query explains the use of NOT keyword in the mysql
 
 SELECT * from station where not city = 'Berlin';
--- the above sql quey can also be written as :
+-- the above sql query can also be written as :
 
 select * from station where city != 'Berlin';
 
@@ -26,3 +26,6 @@ SELECT * FROM Customers
 WHERE City LIKE '
 [acs]
 %';
+
+-- when the alias have spaces then it should be placed inside the square brackets
+SELECT product as [Great Product] from orders;
