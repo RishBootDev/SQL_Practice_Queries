@@ -9,3 +9,9 @@ SELECT * from station where not city = 'Berlin';
 -- the above sql quey can also be written as :
 
 select * from station where city != 'Berlin';
+
+-- check the value is null query
+SELECT * FROM employees WHERE salary IS NULL;
+
+-- check the value is not null
+SELECT * FROM employees WHERE salary IS NOT NULL;
