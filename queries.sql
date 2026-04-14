@@ -17,3 +17,6 @@ SELECT * FROM employees WHERE salary IS NULL;
 SELECT * FROM employees WHERE salary IS NOT NULL;
 
 -- in sql this sign represents a single pattern (_) when used with like operator
+-- now i am presenting a query in which if i am given a pattern of name that has second letter a
+
+select * from student where name like '_a%';
