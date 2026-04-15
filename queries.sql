@@ -53,3 +53,11 @@ from Employee e1
 where e1.salary < e2.salary;
 
 
+-- 586 -> Customer placing the largest number of orders
+select customer_number
+from Orders
+group by customer_number
+order by count(order_number) desc
+    limit 1;
+
+
