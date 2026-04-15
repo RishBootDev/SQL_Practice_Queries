@@ -68,3 +68,13 @@ select *, if(x+y>z and y+z>x and x+z>y, "Yes","No") as triangle from triangle
 SELECT id, name FROM table1
 UNION
 SELECT id, name FROM table2;
+
+
+-- bank account summary3
+select name, sum(amount) as Balance
+from Users u
+         left join Transactions t
+                   on u.account = t.account
+group by u.account
+having sum(amount) > 10000;
+
